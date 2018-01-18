@@ -1,0 +1,27 @@
+{
+  "name": "nba-cli",
+  "version": "1.0.0",
+  "description": "nba command line application for schedule and score updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "bin": {
+    "nba": "nba-cli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-256-colors": "^1.1.0",
+    "chalk": "^2.3.0",
+    "cli-table": "^0.3.1",
+    "cli-table2": "^0.2.0",
+    "color2xterm": "^1.0.0",
+    "commander": "^2.13.0",
+    "moment": "^2.18.1",
+    "progress": "^2.0.0",
+    "request": "^2.81.0",
+    "tty-table": "^2.5.2"
+  }
+}
