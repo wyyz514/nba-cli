@@ -1,6 +1,6 @@
-var table = require('tty-table');
+var Table = require('cli-table');
 var moment = require("moment");
-
+var table = new Table();
 var header = [
  {
   value : "Date",
@@ -16,12 +16,12 @@ var header = [
  }
 ];
 
-exports.colorize = function (colorize) {
+exports.prepare = function (colorize) {
     return function (data) {
         if (data.homeTeam && data.awayTeam) {
             var colorizedHomeData = colorize(data.homeTeam, data.homeTeam.short_name);
             var colorizedAwayData = colorize(data.awayTeam, data.awayTeam.short_name);
-            var stringToDisplay = colorizedAwayData + data.awayScore + '@' + data.homeScore + colorizedHomeData;
+            var stringToDisplay = colorizedAwayData + " " + data.awayScore + " " + "@" + " " + data.homeScore + " " + colorizedHomeData;
             return {
                 'Date' : data.date,
                 'Game' : stringToDisplay.trim()
@@ -37,5 +37,8 @@ exports.colorize = function (colorize) {
 
 exports.tabulate = function (data) {
     var rows = data;
-    console.log(table(header, rows).render());
+    for (var row of rows) {
+        table.push({[row.Date]: row.Game});
+    }
+    console.log(table.toString());
 }

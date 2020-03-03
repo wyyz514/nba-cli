@@ -1,4 +1,4 @@
-#!/home/ubuntu/.nvm/versions/node/v4.7.3/bin/node
+#! /usr/local/bin/node
 
 var utils = require('./app/utils');
 var stats = require('./app/stats');
