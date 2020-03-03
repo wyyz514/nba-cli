@@ -1,4 +1,4 @@
-#! /usr/local/bin/node
+#! /usr/bin/env node
 
 var utils = require('./app/utils');
 var stats = require('./app/stats');
@@ -22,7 +22,7 @@ if(!program.args.length) {
         var requestUrls = dates.map(function(date) {
             return utils.replaceParams(date)(url);
         });
-        
+
         stats.getStats(requestUrls).then(function(data) {
             Promise.all(data).then(function(d){
                stats.displayStats(d);
@@ -31,5 +31,5 @@ if(!program.args.length) {
               console.log(e);
             });
         });
-        }   
+        }
 }

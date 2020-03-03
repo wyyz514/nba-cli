@@ -11,11 +11,15 @@ Get a SportRadar API key for NBA
 
 Add to your environment
 
-`export NBA_SR_KEY="YOUR API KEY"`
+```
+vi ~/.bashrc
+export NBA_SR_KEY=_YOUR_SPORTRADAR_KEY
+:wq
+source ~/.bashrc
 
 
 Run `npm install`
-
+Then `npm link`
 
 Enter `nba -d [Some number of days; positive for future dates, negative for past dates]`
 

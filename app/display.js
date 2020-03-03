@@ -1,20 +1,6 @@
 var Table = require('cli-table');
 var moment = require("moment");
 var table = new Table();
-var header = [
- {
-  value : "Date",
-  color: "white",
-  align : "center",
-  width : 40
- },
- {
-  value : "Game",
-  color : "white",
-  align : "center",
-  width : 40
- }
-];
 
 exports.prepare = function (colorize) {
     return function (data) {
