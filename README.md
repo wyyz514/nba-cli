@@ -2,7 +2,7 @@
 
 Command-line utility for keeping up to date with NBA scores and schedules using the SportRadar API
 
-[NBA-CLI screenshot](./nba-cli.PNG)
+[](./nba-cli.GIF)
 
 ### Installation
 
