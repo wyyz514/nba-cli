@@ -8,6 +8,8 @@ Command-line utility for keeping up to date with NBA scores and schedules using 
 
 Get a SportRadar API key for NBA
 
+- Create Account -> My Account -> Create New App -> Generate key for NBA trial
+
 
 Add to your environment
 
@@ -16,7 +18,7 @@ vi ~/.bashrc
 export NBA_SR_KEY=_YOUR_SPORTRADAR_KEY
 :wq
 source ~/.bashrc
-
+```
 
 Run `npm install`
 Then `npm link`
