@@ -8,7 +8,7 @@ Command-line utility for keeping up to date with NBA scores and schedules using 
 
 Get a SportRadar API key for NBA 
 
-[https://developer.sportradar.com/member/register](Sportradar Register Link)
+[Sportradar Registration link](https://developer.sportradar.com/member/register)
 
 - My Account -> Create New App -> Generate key for NBA trial
 
